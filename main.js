@@ -28,6 +28,14 @@ if (window.innerWidth < 1024) {
   });
 }
 
+// Navbar style on scroll
+
+window.addEventListener("scroll", () => {
+  document
+    .querySelector("nav")
+    .classList.toggle("window-scroll", window.scrollY > 0);
+});
+
 // Testimonials Slider "Swiper Js"
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,

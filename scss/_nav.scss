@@ -1,4 +1,22 @@
 nav {
+  /*Will apply these style to navbar on scroll*/
+  &.window-scroll {
+    background: $white-color;
+    .container {
+      button,
+      a {
+        color: $black-color;
+        font-weight: 600;
+        & > h3 {
+          color: $black-color;
+        }
+        &.btn {
+          color: $white-color;
+        }
+      }
+    }
+  }
+
   width: 100vw;
   height: 5rem;
   position: fixed;

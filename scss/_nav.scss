@@ -58,6 +58,14 @@ nav {
 
 @media screen and (max-width: 1024px) {
   nav {
+    /*Will apply these style to navbar on scroll*/
+    &.window-scroll {
+      .container {
+        a {
+          color: $white-color;
+        }
+      }
+    }
     .container {
       button {
         display: inline-block;
@@ -126,6 +134,20 @@ nav {
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    .container {
+      ul {
+        display: flex !important;
+      }
+
+      button {
+        display: none !important;
       }
     }
   }
